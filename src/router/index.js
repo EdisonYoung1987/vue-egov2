@@ -21,7 +21,8 @@ const routes = [
         path: '/order',
         
         name: 'order',
-        component: () => import('../views/Layout/Order/OrderList/OrderList.vue'),
+        component: () => import('../views/Layout/Order/Order.vue'),
+        redirect: '/order/order-back',
         children: [
           {
             path: 'order-list',

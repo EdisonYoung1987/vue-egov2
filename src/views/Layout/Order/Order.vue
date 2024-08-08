@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <h2>订单</h2>
+        <router-view></router-view>
     </div>
 </template>
 <script>
