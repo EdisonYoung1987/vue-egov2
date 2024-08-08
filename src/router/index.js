@@ -15,7 +15,8 @@ const routes = [
         path: '/home',
         
         name: 'Dashboard',
-        component: () => import('../views/Layout/Home/Home.vue')
+        component: () => import('../views/Layout/Home/Home.vue'),
+        
       },
       {
         path: '/order',
