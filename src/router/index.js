@@ -8,7 +8,6 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
     component: Layout,
     children: [
       {
@@ -22,7 +21,21 @@ const routes = [
         path: '/order',
         
         name: 'order',
-        component: () => import('../views/Layout/Order/Order.vue')
+        component: () => import('../views/Layout/Order/OrderList/OrderList.vue'),
+        children: [
+          {
+            path: 'order-list',
+            component: () => import('../views/Layout/Order/OrderList/OrderList.vue')
+          },
+          {
+            path: 'order-back',
+            component: () => import('../views/Layout/Order/OrderBack/OrderBack.vue')
+          },
+          {
+            path: 'order-back2',
+            component: () => import('../views/Layout/Order/OrderBack/OrderBack.vue')
+          },
+        ]
       },
       {
         path: '/params',
