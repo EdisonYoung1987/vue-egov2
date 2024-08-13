@@ -1,16 +1,44 @@
 {
-  "id": "",
-  "name": "",
+  "id": "4652719",
+  "name": "ycy",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
-  "description": "",
+  "description": "→_→",
   "glyphs": [
     {
-      "icon_id": "15838459",
-      "name": "direction-down-circle",
-      "font_class": "direction-down-circle",
-      "unicode": "e66b",
-      "unicode_decimal": 58987
+      "icon_id": "16020747",
+      "name": "折叠2",
+      "font_class": "zhedie2",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "16020767",
+      "name": "折叠1",
+      "font_class": "zhedie1",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "15838517",
+      "name": "prompt",
+      "font_class": "prompt",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "33987002",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "33987169",
+      "name": "进入",
+      "font_class": "jinru",
+      "unicode": "e621",
+      "unicode_decimal": 58913
     }
   ]
 }

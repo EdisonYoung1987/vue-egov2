@@ -1,10 +1,10 @@
 <template>
     <div>
         <!-- <h1>XXX管理系统</h1> -->
+        
         <!---default-active 它的值是一个字符串，表示菜单项的索引。例如，"2" 表示菜单中第二个菜单项将被默认激活。--->
-        <el-menu default-active="/" class="el-menu-vertical-demo" 
-            background-color="#545c64" text-color="#fff" active-text-color="#ffd04b"
-            router>
+        <el-menu default-active="/" class="el-menu-vertical-demo" background-color="#545c64" text-color="#fff"
+            active-text-color="#ffd04b" router :collapse="isCollapse">
             <el-menu-item index="/">
                 <i class="el-icon-menu"></i>
                 <span slot="title">首页</span>
@@ -13,6 +13,8 @@
                 <i class="el-icon-document"></i>
                 <span slot="title">参数管理</span>
             </el-menu-item>
+            <!--order也需要router-view，为了在/order对应的子菜单项被点击时，能够动态加载并显示
+            对应的路由组件，你需要在/order对应的组件中使用<router-view>。-->
             <el-submenu index="/order">
                 <template slot="title">
                     <i class="el-icon-location"></i>
@@ -36,7 +38,11 @@
 <script>
 
 export default {
-
+    data() {
+        return {
+            isCollapse: false
+        };
+    }
 }
 </script>
 <style scoped>

@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1722844311091') format('truetype');
+  font-family: "iconfont"; /* Project id 4652719 */
+  src: url('iconfont.woff2?t=1723559301514') format('woff2'),
+       url('iconfont.woff?t=1723559301514') format('woff'),
+       url('iconfont.ttf?t=1723559301514') format('truetype');
 }
 
 .iconfont {
@@ -11,7 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-direction-down-circle:before {
-  content: "\e66b";
+.icon-zhedie2:before {
+  content: "\e620";
+}
+
+.icon-zhedie1:before {
+  content: "\e622";
+}
+
+.icon-prompt:before {
+  content: "\e67b";
+}
+
+.icon-fanhui:before {
+  content: "\e61e";
+}
+
+.icon-jinru:before {
+  content: "\e621";
 }
 
